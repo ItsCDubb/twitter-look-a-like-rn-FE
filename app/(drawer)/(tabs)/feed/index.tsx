@@ -1,6 +1,6 @@
-import { FlatList, Pressable, StyleSheet, View } from "react-native";
-import Tweet from "../../../components/Tweet";
-import tweets from "../../../assets/data/tweets";
+import { FlatList, StyleSheet, View } from "react-native";
+import Tweet from "../../../../components/Tweet";
+import tweets from "../../../../assets/data/tweets";
 import { Entypo } from "@expo/vector-icons";
 import { Link } from "expo-router";
 
@@ -27,20 +27,19 @@ const styles = StyleSheet.create({
     position: "absolute",
     color: "white",
     padding: 15,
-    textAlign: "center",
-    lineHeight: 50,
     right: 15,
     bottom: 15,
     fontSize: 24,
     borderRadius: 25,
-    backgroundColor: "#1c9bf0",
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 3,
+      height: 2,
     },
-    shadowOpacity: 0.29,
-    shadowRadius: 4.65,
-    elevation: 7,
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+    overflow: "hidden",
+    backgroundColor: "#1c9bf0",
   },
 });
